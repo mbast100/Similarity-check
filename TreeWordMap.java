@@ -19,7 +19,7 @@ public class TreeWordMap implements WordMap {
 
     }
 
-    private String[] box;
+    private String[] item;
     private Integer[] countArray;
     private int position;
     private int positionCounts;
@@ -170,25 +170,25 @@ public class TreeWordMap implements WordMap {
     public String[] keys() {
         if(size() == 0){throw new IllegalStateException("nothing in the list");}
 
-        box = new String[this.size()];
-        box = key(root);  
-        for(int i = 0; i < box.length; i ++){
+        item = new String[this.size()];
+        item = key(root);  
+        for(int i = 0; i < item.length; i ++){
 
         }  
-        return box;
+        return item;
     }
 
     private String[] key( Elem current){
         if( current == null){
-            return box;
+            return item;
         }
         else{
             key(current.left);
-            box[position++] = current.key;
+            item[position++] = current.key;
             key(current.right);
 
         }
-        return box;
+        return item;
 
     }
   

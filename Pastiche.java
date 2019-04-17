@@ -174,8 +174,6 @@ public class Pastiche {
     
     public static void main(String[] args) {
 
-        StudentInfo.display();
-
         // Parsing the command line arguments
         
         if (args.length != 3) {
