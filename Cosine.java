@@ -1,18 +1,20 @@
 import java.lang.Math; 
 
 public class Cosine implements Similarity{
+
 //Calculates the cosine similarity measure between two documents represented by their WordMap objects.
+
     public double score( WordMap a, WordMap b ){
 
-        if (a ==null || b==null){
+        if (a == null || b == null){
             throw new NullPointerException();
         }
-        if (a.size()==0 || b.size()==0){
+        if (a.size() == 0 || b.size() == 0){
             throw new IllegalArgumentException();
         }
 
-        Integer [] alpha=a.counts();
-        Integer [] beta=b.counts();
+        Integer [] alpha = a.counts();
+        Integer [] beta = b.counts();
 
 
         String [] letraA = a.keys();
