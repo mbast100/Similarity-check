@@ -28,6 +28,7 @@ public class Pastiche {
     // argument passed on the command line.
     
     private static class WordMapFactory {
+        
         private static final int WORDMAP_IS_LINKED = 0;
         private static final int WORDMAP_IS_TREE = 1;
         private int type;

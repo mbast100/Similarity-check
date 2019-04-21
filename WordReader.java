@@ -96,7 +96,7 @@ public class WordReader {
 
         public String next(){
             String alpha;
-            if(hasNext()==false){
+            if(hasNext() == false){
                 System.out.println("gram is greater than remaining text");
                 return null;
             }
