@@ -34,4 +34,16 @@ public class Jaccard implements Similarity{
 
         return intersection/union;
     }
+
+    public String flag(double result){
+
+        String out = new String();
+        if(result < 0){
+            throw new IllegalArgumentException();
+        }
+        else if(result > 50.0){
+            out = "Warning this may be a copy!";
+        }
+        return out;
+    }
 }
