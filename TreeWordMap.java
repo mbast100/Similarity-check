@@ -1,4 +1,8 @@
-
+/**
+ * @author Mark Bastawros
+ * 
+ * Binary search tree implementation
+ */
 
 public class TreeWordMap implements WordMap {
 
